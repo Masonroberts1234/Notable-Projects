@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <!--
+      Project 02_04_02
+
+      Author: Mason Roberts
+      Date:   11/21/17
+
+      Filename: Paycheck.html
+   -->
+    <title>Paycheck</title>
+    <script src="modernizr.custom.65897.js"></script>
+    <style>
+        *{
+            text-align: center;
+        }
+        input{
+            border: 1px solid gray;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+   <h2>Paycheck Form</h2>
+    <form name="weekSalary" method="post" action="Paycheck.php">
+        <input type="number" placeholder="Hours Worked" style="width: 140px;" name="Hours" min="0" step="1">
+        <br>
+        <input type="number" placeholder="Hourly Wage" name="Wage" min="0" style="width: 140px;" step=".01">    
+        <br>
+        <input type="reset" value="Clear Form" >
+        <br>
+        <input type="submit" value="Submit" name="Submit">
+    </form>
+</body>
+
+</html>
